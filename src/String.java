@@ -7,10 +7,16 @@ public class String {
 	}
 	
 	public static void compareTo() {
-		 String[] names = new String [20];
-		 names[0] = "Meier";
-		 names[1] = "Mayer";
-		 Arrays.sort(names);
-		 System.out.println(Arrays.toString(names));
+		 java.lang.String name2 = "Mayer";
+		 java.lang.String name1 = "Meier";
+		 name1.toLowerCase();
+		 name2.toLowerCase();
+		 if(name1.compareTo(name2)>0)
+		 {
+			 System.out.println(name1 + " "+ name2);
+		 }
+		 else {
+			 System.out.println(name2 + " "+ name1);
+		 }
 	}
 }
